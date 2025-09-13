@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: rgb(201, 201, 201);
+  background-color: rgb(24, 24, 24);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  .password-container {
+    text-align: center;
+    p {
+      margin-top: 1rem;
+      padding: 2rem 3rem;
+      color: aliceblue;
+      background-color: rgb(81, 81, 81);
+      border-radius: 1rem;
+    }
+  }
+
+  form {
+    p, small {
+      text-align: center;
+    }
+
+    label {
+      display: none;
+    }
+    
+    .inputs-container {
+      margin-top: 1rem;
+
+      input {
+        color: aliceblue;
+        background-color: rgb(81, 81, 81);
+        border: none;
+        padding: 1rem 2rem;
+      }
+
+      .number-input {
+        border-radius: 1rem 0rem 0rem 1rem;
+      }
+
+      .submit-input {
+        border-radius: 0rem 1rem 1rem 0rem;
+      }
+    } 
+
+    small {
+      margin-top: 1rem;
+      color: rgb(244, 157, 157);
+      display: block;
+      text-align: center;
+    }
+  }
+
+}
