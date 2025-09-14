@@ -51,6 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       $age = $_POST["age"];
       $password = $_POST["password"];
 
+      filter_var(INPUT_POST, FILTER_SANITIZE_SPECIAL_CHARS)
       // will run html codes in username
       // echo $username;
       // this is why we use:
