@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* https://uiverse.io/ css styling */
+body {
+  height: 100vh;
+  padding: 2rem;
+  font-family: sans-serif;
+  background-image: url("../public/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .title-container {
+    h2 {
+      font-weight: 400;
+    }
+  }
+
+  .form-container {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    form {
+      width: 100%;
+      max-width: 400px;
+      border: 1.5px solid black;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      input, textarea {
+        width: 100%;
+        max-width: 300px;
+        color: black;
+        border: none;
+        border-radius: 0.2rem;
+        background-color: rgb(214, 181, 181);
+        padding: 0.5rem;
+      }
+
+      button {
+        padding: 0.5rem;
+        color: white;
+        background-color: rgb(74, 74, 74);
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(45, 45, 45);
+        }
+      }
+    }
+  }
+
+  .todos-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .todos-container2 {
+      width: 100%;
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: 0.5fr 2fr 5fr 0.5fr;
+      
+      h3 {
+        padding: 0.75rem 1rem;
+        border-bottom: 1.5px solid black;
+      }
+
+      p {
+        padding: 0.75rem 1rem;
+        border-bottom: 1.5px solid black;
+        border-right: 1.5px solid black;
+      }
+
+      .remove-right {
+        border-right: none;
+      }
+
+      .status-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.35rem;
+        border-bottom: 1.5px solid black;
+
+        button {
+          cursor: pointer;
+          height: 1.5rem;
+          width: 1.5rem;
+          font-size: 0.65rem;
+          border: none;
+          border-radius: 0.4rem;
+        }
+
+        .done {
+          color: black;
+          background-color: rgb(214, 181, 181);
+
+          &:hover {
+            background-color: rgb(198, 151, 151);
+          }
+        }
+
+        .delete {
+          color: white;
+          background-color: rgb(74, 74, 74);
+
+          &:hover {
+            background-color: rgb(45, 45, 45);
+          }
+        }
+      }
+    }
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .card {
+      width: 12.5rem;
+      padding: 1rem;
+      background-color: aliceblue;
+      border: 1px solid rgb(74, 74, 74);
+      border-radius: .625rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .card-foot {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          padding: 0.5rem;
+          cursor: pointer;
+        }
+        .done-btn {
+          color: white;
+          background-color: rgb(74, 74, 74);
+          border: none;
+
+          &:hover {
+            background-color: rgb(45, 45, 45);
+          }
+        }
+      }
+    }
+  }
+}
