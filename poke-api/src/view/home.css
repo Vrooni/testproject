@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: bricolage_rotesque;
+  src: url("../public/BricolageGrotesque.ttf");
+}
+
+body {
+    padding: 5rem;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    font-family: bricolage_rotesque;
+    background: url("../public/pokemon_background.jpg");
+    background-size: cover;
+    background-position: center;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    a {
+        color: rgb(255, 233, 194);
+
+      &:hover {
+        color: rgb(255, 200, 97);
+      }
+    }
+
+    form {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      width: 80%;
+      max-width: 20rem;
+      
+      input {
+        width: 100%;
+        padding: 0.2rem;
+        background-color: rgba(255, 255, 255, 0.65);
+        border-radius: 0.65rem;
+        font-family: inherit;
+        padding: 0.65rem 1rem;
+        border: none;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        padding: 0.4rem;
+        background-color: rgb(255, 166, 0);
+        border: none;
+        border-radius: 40%;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(234, 152, 1);
+        }
+
+        i {
+          color: white;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .sprite {
+      min-height: 320px;
+      background: #eee0ae;
+      background: radial-gradient(circle, rgb(45, 75, 17) 0%, rgba(148, 187, 233, 0) 70%);
+    }
+
+    .info {
+      position: relative;
+      top: -5rem;
+    }
+
+    .sad-poke {
+      margin-top: 5rem;
+      height: 200px;
+    }
+  }
+}
